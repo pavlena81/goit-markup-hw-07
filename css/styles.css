@@ -85,9 +85,8 @@ img {
 
 /* logo */
 .logo {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
 
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
@@ -95,6 +94,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
   color: var(--logo-text-color);
 }
 
@@ -554,16 +554,9 @@ img {
   margin-left: 70px;
 }
 
-.footer-logo {
-  display: flex;
+.footer__logo {
   margin-bottom: 20px;
 
-  text-decoration: none;
-
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: var(--accessorial-text-color);
 }
 
