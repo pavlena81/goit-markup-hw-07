@@ -73,6 +73,13 @@ img {
   color: var(--accent-color);
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 .nav {
   margin-left: 93px;
 }
@@ -198,13 +205,6 @@ img {
   text-transform: uppercase;
 
   color: var(--accessorial-text-color);
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
 }
 
 /* hero-button */
