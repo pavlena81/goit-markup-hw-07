@@ -13,13 +13,12 @@
   display: block;
   position: relative;
   margin-bottom: 10px;
-}
-
-.modal__label:last-of-type {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+  &:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .modal__text {
@@ -43,11 +42,14 @@
   background-color: transparent;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__input:hover,
-.modal__input:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:hover + .modal__icon,
+  &:focus + .modal__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__icon {
@@ -56,11 +58,6 @@
   left: 15px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__input:hover + .modal__icon,
-.modal__input:focus + .modal__icon {
-  fill: var(--accent-color);
 }
 
 .comment {
@@ -80,11 +77,10 @@
   color: var(--modal-form-comment);
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__comment:hover,
-.modal__comment:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .checkbox {
@@ -143,11 +139,10 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: var(--button-accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-color);
+  }
 }
 
 .modal-close {
@@ -167,6 +162,14 @@
   background-color: transparent;
 
   cursor: pointer;
+  &:hover > .modal-close__icon,
+  &:focus > .modal-close__icon {
+    fill: var(--accent-color);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-close__icon {
@@ -178,14 +181,4 @@
   height: 11px;
   fill: var(--logo-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close:hover > .modal-close__icon,
-.modal-close:focus > .modal-close__icon {
-  fill: var(--accent-color);
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  border-color: var(--accent-color);
 }

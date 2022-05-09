@@ -22,11 +22,16 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
+  &:hover,
+  &:focus {
+    min-width: 73px;
+    background-color: var(--button-accent-color);
+    color: var(--accessorial-text-color);
+    box-shadow: var(--filters-shadow);
+  }
 }
 
 .button__primary,
-.button:hover,
-.button:focus,
 .button__current {
   min-width: 73px;
 
@@ -43,13 +48,12 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button__secondary:hover,
-.button__secondary:focus {
-  background-color: var(--button-accent-color);
-  color: var(--accessorial-text-color);
-  box-shadow: var(--filters-shadow);
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-color);
+    color: var(--accessorial-text-color);
+    box-shadow: var(--filters-shadow);
+  }
 }
 
 /* --filters */
