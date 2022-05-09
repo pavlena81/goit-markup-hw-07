@@ -2,17 +2,16 @@
   display: flex;
 }
 
-.work-item {
+.work__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.work-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.work-item-text {
+.work__text {
   position: absolute;
   left: 0;
   bottom: 0;

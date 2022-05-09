@@ -4,31 +4,30 @@
   background-color: var(--buttom-bg-color);
 }
 
-.team-list-item {
+.team__item {
   flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 
   background-color: var(--accessorial-text-color);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
-.team-list-item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.card-img {
+.card__img {
   width: 270px;
   height: 260px;
 }
 
-.team-card {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 
-.team-title {
+.team__subtitle {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -40,7 +39,7 @@
   color: var(--main-text-color);
 }
 
-.team-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
